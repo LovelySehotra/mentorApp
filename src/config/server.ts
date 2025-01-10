@@ -16,7 +16,7 @@ export class Server{
         this.app.use("/api",appRouter);
     }
     start(){
-        const port = this.config.port ?? 1209;
+        const port = this.config.port ?? 5173;
         connectionToDB()
         this.app.listen(port,()=>{
             console.log("Yes i am working")
